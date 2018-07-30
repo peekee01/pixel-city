@@ -14,6 +14,7 @@
 		652550DB210F7F970074AEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652550DA210F7F970074AEF2 /* Assets.xcassets */; };
 		652550DE210F7F970074AEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652550DC210F7F970074AEF2 /* LaunchScreen.storyboard */; };
 		652550ED210F9C450074AEF2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652550EC210F9C450074AEF2 /* DroppablePin.swift */; };
+		652550EF210FA9E50074AEF2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652550EE210FA9E50074AEF2 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		652550DD210F7F970074AEF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652550DF210F7F970074AEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652550EC210F9C450074AEF2 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		652550EE210FA9E50074AEF2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		A3D2AECDB927067DFC95B3D6 /* Pods-pixel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				652550EC210F9C450074AEF2 /* DroppablePin.swift */,
+				652550EE210FA9E50074AEF2 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652550EF210FA9E50074AEF2 /* PhotoCell.swift in Sources */,
 				652550D6210F7F940074AEF2 /* MapVC.swift in Sources */,
 				652550ED210F9C450074AEF2 /* DroppablePin.swift in Sources */,
 				652550D4210F7F940074AEF2 /* AppDelegate.swift in Sources */,
