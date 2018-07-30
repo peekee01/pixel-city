@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import MapKit
 
 class MapVC: UIViewController {
-
+    
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        mapView.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
+    @IBOutlet weak var centerMapBtnWasPressed: UIButton!
+    
+    
 }
 
+
+
+extension MapVC: MKMapViewDelegate {
+    
+}
