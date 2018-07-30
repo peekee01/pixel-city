@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to drop pin and view photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba3-YB-U66">
-                                        <rect key="frame" x="39" y="24" width="297" height="22"/>
+                                        <rect key="frame" x="39" y="44" width="297" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="sV9-c3-b6Y"/>
                                             <constraint firstAttribute="width" constant="297" id="tEN-gA-gRm"/>
@@ -39,7 +39,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="iAH-EH-TDF"/>
                                     <constraint firstItem="Ba3-YB-U66" firstAttribute="centerX" secondItem="IB2-Jb-c8z" secondAttribute="centerX" id="jog-9b-C1l"/>
-                                    <constraint firstItem="Ba3-YB-U66" firstAttribute="centerY" secondItem="IB2-Jb-c8z" secondAttribute="centerY" id="sew-hF-q9h"/>
+                                    <constraint firstItem="Ba3-YB-U66" firstAttribute="centerY" secondItem="IB2-Jb-c8z" secondAttribute="centerY" constant="20" id="sew-hF-q9h"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPi-fB-DSB">
@@ -49,8 +49,11 @@
                                     <constraint firstAttribute="width" constant="50" id="kQm-Cb-orc"/>
                                 </constraints>
                                 <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="centerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjX-Ws-r3X"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-wu-54J">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-wu-54J">
                                 <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -61,20 +64,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QPi-fB-DSB" secondAttribute="trailing" constant="20" id="48p-Dh-fwA"/>
                             <constraint firstItem="YCb-wu-54J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4zA-KC-bNk"/>
                             <constraint firstItem="58b-AW-03o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6nK-e1-Jff"/>
-                            <constraint firstItem="58b-AW-03o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7vC-Rn-zAr"/>
+                            <constraint firstItem="58b-AW-03o" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="7vC-Rn-zAr"/>
                             <constraint firstAttribute="trailing" secondItem="YCb-wu-54J" secondAttribute="trailing" id="819-2u-DUw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QPi-fB-DSB" secondAttribute="bottom" constant="20" id="9aI-eU-OhZ"/>
-                            <constraint firstItem="YCb-wu-54J" firstAttribute="top" secondItem="QPi-fB-DSB" secondAttribute="bottom" id="JFN-6s-obK"/>
-                            <constraint firstItem="YCb-wu-54J" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eJg-ny-ySq"/>
-                            <constraint firstItem="58b-AW-03o" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gi5-ec-BGa"/>
+                            <constraint firstItem="YCb-wu-54J" firstAttribute="top" secondItem="58b-AW-03o" secondAttribute="bottom" id="JFN-6s-obK"/>
+                            <constraint firstItem="YCb-wu-54J" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="eJg-ny-ySq"/>
+                            <constraint firstItem="58b-AW-03o" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="gi5-ec-BGa"/>
                             <constraint firstItem="IB2-Jb-c8z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nbL-t3-57I"/>
                             <constraint firstItem="IB2-Jb-c8z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ru7-Cy-RJ7"/>
-                            <constraint firstItem="58b-AW-03o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ulb-7x-h7D"/>
+                            <constraint firstItem="58b-AW-03o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ulb-7x-h7D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="centerMapBtnWasPressed" destination="QPi-fB-DSB" id="ueC-qY-mYF"/>
                         <outlet property="mapView" destination="58b-AW-03o" id="Geu-HZ-nBc"/>
                     </connections>
                 </viewController>
