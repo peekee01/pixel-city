@@ -142,6 +142,7 @@ extension MapVC: MKMapViewDelegate {
         addSwipe()
         addSpinner()
         addProgressLbl()
+    
         
         let touchPoint = sender.location(in: mapView)
         let touchCoordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
@@ -151,7 +152,7 @@ extension MapVC: MKMapViewDelegate {
         
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(touchCoordinate, regionRadius * 2, regionRadius * 2)
         mapView.setRegion(coordinateRegion, animated: true)
-    }
+        }
     
     func removePin() {
         for annotation in mapView.annotations {
@@ -159,10 +160,6 @@ extension MapVC: MKMapViewDelegate {
         }
     }
 }
-
-
-
-
 
 
 
@@ -181,9 +178,6 @@ extension MapVC: CLLocationManagerDelegate {
     }
     
 }
-
-
-
 
 
 extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
