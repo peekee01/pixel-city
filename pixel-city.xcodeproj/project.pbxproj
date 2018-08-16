@@ -16,6 +16,7 @@
 		652550ED210F9C450074AEF2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652550EC210F9C450074AEF2 /* DroppablePin.swift */; };
 		652550EF210FA9E50074AEF2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652550EE210FA9E50074AEF2 /* PhotoCell.swift */; };
 		655F22DB212611AC00B2EA4F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F22DA212611AC00B2EA4F /* Constants.swift */; };
+		655F22DD2126263100B2EA4F /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F22DC2126263100B2EA4F /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		652550EC210F9C450074AEF2 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		652550EE210FA9E50074AEF2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		655F22DA212611AC00B2EA4F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		655F22DC2126263100B2EA4F /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		A3D2AECDB927067DFC95B3D6 /* Pods-pixel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				652550D5210F7F940074AEF2 /* MapVC.swift */,
+				655F22DC2126263100B2EA4F /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655F22DD2126263100B2EA4F /* PopVC.swift in Sources */,
 				655F22DB212611AC00B2EA4F /* Constants.swift in Sources */,
 				652550EF210FA9E50074AEF2 /* PhotoCell.swift in Sources */,
 				652550D6210F7F940074AEF2 /* MapVC.swift in Sources */,
